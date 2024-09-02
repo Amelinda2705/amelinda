@@ -9,17 +9,35 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        >
         <style>
             * {
                 font-family: "Poppins", sans-serif;
+            }
+            @media (max-width: 576px) {
+                .direct-col  {
+                    flex-direction: column !important;
+                    align-items: center;
+                }
+                .direct-col img {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .direct-col div {
+                    width: 100% !important;
+                }
+                .preview h1 {
+                    font-size: 3rem;
+                }
+                .logo img {
+                    width: 40px;
+                }
             }
         </style>
     </head>
     <body class="mx-5">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid px-5 py-3">
-                <a class="navbar-brand" href="#"
+                <a class="navbar-brand logo" href="#"
                     ><img
                         src="logo.png"
                         alt="logo Muslim Pocket"
@@ -50,7 +68,7 @@
             </div>
         </nav>
         <main class="text-center d-flex align-items-center flex-column">
-            <div class="my-5 d-flex justify-content-center">
+            <div class="direct-col my-5 d-flex justify-content-center">
                 <img src="preview.png" width="200" alt="" />
                 <div class="w-50 mx-5">
                     <h1 class="fw-bold mb-4">
@@ -91,8 +109,9 @@
             </div>
             <div class="d-flex flex-column">
                 <div
-                    class="d-flex align-items-center justify-content-center mb-5"
-                >
+                    class="direct-col d-flex flex-row-reverse align-items-center justify-content-center mb-5"
+                    >
+                    <img src="tracker.png" width="400" alt="..." />
                     <div class="w-50 mx-5">
                         <h2 class="fw-bold">
                             Track your pray in Muslim Pocket!
@@ -124,15 +143,14 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="tracker.png" width="400" alt="..." />
                 </div>
                 <div
-                    class="d-flex align-items-center justify-content-center mb-5"
+                    class="direct-col d-flex align-items-center justify-content-center mb-5"
                 >
                     <img src="tasbih.png" width="400" alt="..." />
                     <div class="w-50 mx-5">
                         <h2 class="fw-bold">
-                            Track your dzikir in Muslim Pocket!
+                            Track your dhikr in Muslim Pocket!
                         </h2>
                         <p class="">
                             Count your dhikr easily by simply tapping on your
@@ -163,8 +181,9 @@
                     </div>
                 </div>
                 <div
-                    class="d-flex align-items-center justify-content-center mb-5"
+                    class="direct-col d-flex flex-row-reverse align-items-center justify-content-center mb-5"
                 >
+                <img src="quran.png" width="400" alt="..." />
                     <div class="w-50 mx-5">
                         <h2 class="fw-bold">
                             Read Al-Qur'an anywhere with Muslim Pocket!
@@ -197,10 +216,9 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="quran.png" width="400" alt="..." />
                 </div>
                 <div
-                    class="d-flex align-items-center justify-content-center mb-5"
+                    class="direct-col d-flex align-items-center justify-content-center mb-5"
                 >
                     <img src="prayer.png" width="400" alt="..." />
                     <div class="w-50 mx-5">
