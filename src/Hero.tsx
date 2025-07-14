@@ -1,4 +1,3 @@
-import hero from "./assets/images/hero.jpg";
 import muslimpocket from "./assets/images/muslimpocket.svg";
 import star from "./assets/images/star.svg";
 import pokasi from "./assets/images/pokasi.png";
@@ -133,7 +132,8 @@ function Hero() {
                         verticalDistance={40}
                         delay={3000}
                         skewAmount={6}
-                        height={360}
+                            height={360}
+                            
                         pauseOnHover
                     >
                         <Card className="text-white p-5">
