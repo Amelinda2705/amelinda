@@ -1,0 +1,29 @@
+---
+import { Font } from "astro:assets";
+
+import "../styles/global.css";
+---
+
+<Font cssVariable="--font-inter" preload />
+<Font cssVariable="--font-fraunces" preload />
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" initial-scale="1" />
+        <link rel="icon" href="" type="image/svg+xml" />
+        <title>Amel's Pages</title>
+    </head>
+    <body>
+        <main class="bg-[#FBF8F8] px-20 py-20 min-h-screen">
+            <section>
+                <span class="font-fraunces font-extralight text-4xl"
+                    >Hello, my name is <span
+                        class="text-[#B3446C] cursor-alias rounded decoration-wavy underline-offset-4 decoration-sky-400 focus-visible:ring-4 focus-visible:ring-blue-200 focus:underline hover:underline"
+                        >Amelinda</span
+                    >.</span
+                >
+            </section>
+        </main>
+    </body>
+</html>
