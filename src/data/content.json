@@ -1,0 +1,145 @@
+{
+    "techStack": [
+        {
+            "name": "Flutter",
+            "link": "https://flutter.dev/"
+        },
+        {
+            "name": "Dart",
+            "link": "https://dart.dev/"
+        },
+        {
+            "name": "Astro",
+            "link": "https://astro.build/"
+        },
+        {
+            "name": "React JS",
+            "link": "https://react.dev"
+        },
+        {
+            "name": "Laravel",
+            "link": "https://laravel.com"
+        },
+        {
+            "name": "CodeIgniter",
+            "link": "https://www.codeigniter.com"
+        },
+        {
+            "name": "Firebase",
+            "link": "https://firebase.google.com/"
+        },
+        {
+            "name": "Rive",
+            "link": "https://rive.app"
+        },
+        {
+            "name": "Figma",
+            "link": "https://www.figma.com"
+        },
+        {
+            "name": "Supabase",
+            "link": "https://supabase.com"
+        }
+    ],
+    "certificates": [
+        {
+            "title": "ASEAN Data Science Explorers",
+            "link": "https://www.linkedin.com/in/amelinda-amelinda/overlay/1763624203646/single-media-viewer/?profileId=ACoAAE1LlfoBmBJYlypfPdLWmbuDBWwUpUOZIA4"
+        }
+    ],
+    "languages": [
+        "Indonesia (Native)",
+        "English (TOEIC 910)",
+        "Korean (TOPIK Level 2)"
+    ],
+    "projects": [
+        {
+            "title": "Muslim Pocket",
+            "description": "App for Muslims on Android, not only featuring prayer times (Adhan) but also offering other essential features for Muslims, such as a prayer tracker, tasbih (digital prayer beads), and the Quran with Latin transliteration and Indonesian translation.",
+            "isDesktop": false,
+            "techStack": [
+                {
+                    "name": "Flutter",
+                    "link": "https://flutter.dev/"
+                },
+                {
+                    "name": "Firebase",
+                    "link": "https://firebase.google.com/"
+                },
+                {
+                    "name": "Rive",
+                    "link": "https://rive.app"
+                },
+                {
+                    "name": "Figma",
+                    "link": "https://www.figma.com"
+                }
+            ],
+            "image": {
+                "src": "../images/muslimpocket.png",
+                "alt": "Muslim Pocket App Screenshot"
+            }
+        },
+        {
+            "title": "Service Time",
+            "description": "A smart mobile POS app for motorcycle service shops—manage services and spare parts with ease, and streamline operations with role-based access for Admin, Owner, and Cashier. Fast, simple, and built for your workshop.",
+            "isDesktop": false,
+            "techStack": [
+                {
+                    "name": "Flutter",
+                    "link": "https://flutter.dev/"
+                },
+                {
+                    "name": "Supabase",
+                    "link": "https://supabase.com"
+                },
+                {
+                    "name": "Figma",
+                    "link": "https://www.figma.com"
+                }
+            ],
+            "image": {
+                "src": "../images/servicetime.png",
+                "alt": "Service Time App Screenshot"
+            }
+        },
+        {
+            "title": "Pena Report",
+            "description": "A mobile application that simplifies the process for students to create their entrepreneurship reports and provides easier access to information on various aspects of entrepreneurship.",
+            "isDesktop": false,
+            "techStack": [
+                {
+                    "name": "Flutter",
+                    "link": "https://flutter.dev/"
+                },
+                {
+                    "name": "Firebase",
+                    "link": "https://firebase.google.com/"
+                },
+                {
+                    "name": "Figma",
+                    "link": "https://www.figma.com"
+                }
+            ],
+            "image": {
+                "src": "../images/penareport.png",
+                "alt": "Pena Report App Screenshot"
+            }
+        },
+        {
+            "title": "POKASI",
+            "description": "a smart school website system for tracking student behavior through a point-based system. It records rule violations with penalty points and also encourages positive actions with reward points, helping schools maintain discipline while promoting good behavior in a balanced and transparent way.",
+            "isDesktop": true,
+            "techStack": [
+                {
+                    "name": "CodeIgniter",
+                    "link": "https://www.codeigniter.com"
+                }
+            ],
+            "image": {
+                "src": "../images/pokasi.png",
+                "alt": "POKASI App Screenshot"
+            }
+        }
+    ]
+}

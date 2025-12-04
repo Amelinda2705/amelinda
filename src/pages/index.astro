@@ -1,11 +1,8 @@
 ---
 import { Font } from "astro:assets";
-import { Image } from "astro:assets";
 
-import muslimpocket from "../images/muslimpocket.png";
-import servicetime from "../images/servicetime.png";
-import penareport from "../images/penareport.png";
-import pokasi from "../images/pokasi.png";
+import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
 import "../styles/global.css";
 ---
 
@@ -21,20 +18,42 @@ import "../styles/global.css";
     </head>
     <body>
         <main
-            class="bg-white text-gray-400 hidden lg:flex lg:min-h-screen lg:max-w-7xl xl:max-w-[1400px] lg:mx-auto lg:py-20 lg:px-20 xl:px-12 2xl:px-16"
+            class="bg-white text-gray-400 flex flex-col lg:flex-row gap-5 md:gap-10 lg:min-h-screen py-20 sm:px-20 px-10"
         >
             <section
-                class="font-fraunces font-extralight text-4xl lg:w-1/2 sm:static
-                xl:w-3/6 lg:sticky lg:top-0 lg:h-[calc(100vh-160px)] lg:overflow-y-auto lg:flex lg:flex-col lg:justify-center"
+                class="w-full lg:w-1/2 static lg:sticky lg:top-0 lg:h-[calc(100vh-160px)] flex flex-col lg:justify-center"
             >
-                <span
-                    >Hey, I'm <span
+                <span class="font-fraunces font-extralight text-4xl"
+                    >Hey, I'm <a
+                        href="https://www.linkedin.com/in/amelinda-amelinda/"
+                        target="_blank"
                         class="text-burgundy font-light cursor-alias rounded decoration-wavy underline-offset-4 decoration-burgundy focus-visible:ring-4 focus-visible:ring-blue-200 focus:underline hover:underline"
-                        >Amelinda</span
+                        >Amelinda</a
                     >. I'm passionate about turning ideas into functional
                     applications.</span
                 >
-                <span class="block mt-12"
+                <div class="mt-10 flex gap-5">
+                    <a
+                        href="https://github.com/Amelinda2705"
+                        target="_blank"
+                        class="tracking-tight decoration-wavy underline-offset-4 cursor-alias transition-colors hover:text-burgundy hover:underline"
+                        >Github</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/amelinda-amelinda/"
+                        target="_blank"
+                        class="tracking-tight decoration-wavy underline-offset-4 cursor-alias transition-colors hover:text-burgundy hover:underline"
+                        >Linkedin</a
+                    >
+                    <a
+                        href="#"
+                        target="_blank"
+                        class="tracking-tight decoration-wavy underline-offset-4 cursor-alias transition-colors hover:text-burgundy hover:underline"
+                        >Resume</a
+                    >
+                </div>
+
+                <!-- <span class="block mt-12"
                     >Whether it's a sleek <span
                         class="text-burgundy font-light cursor-alias rounded underline-offset-4 decoration-burgundy focus-visible:ring-4 focus-visible:ring-blue-200 focus:underline hover:underline"
                         >website</span
@@ -46,243 +65,11 @@ import "../styles/global.css";
                         >desktop</span
                     > tool, I enjoy the entire process, from understanding the problem
                     to writing the final line of code.</span
-                >
+                > -->
             </section>
-            <section class="w-1/2">
-                <div class="flex flex-col items-end-safe">
-                    <div class="flex items-center-safe justify-center gap-3">
-                        <div class="w-md h-px bg-burgundy"></div>
-                        <span
-                            class="text-4xl font-fraunces font-light text-burgundy"
-                            >Projects</span
-                        >
-                    </div>
-                    <div class="flex flex-col items-center mt-5 gap-5">
-                        <div
-                            class="bg-gray-50 rounded-md flex justify-center items-center-safe group hover:bg-gray-100 cursor-alias overflow-hidden"
-                        >
-                            <div class="w-72 p-5">
-                                <span
-                                    class="text-lg font-normal font-sans text-gray-800"
-                                    >Muslim Pocket</span
-                                >
-                                <span class="block my-2 text-gray-600 text-sm"
-                                    >App for Muslims on Android, not only
-                                    featuring prayer times (Adhan) but also
-                                    offering other essential features for
-                                    Muslims, such as a prayer tracker, tasbih
-                                    (digital prayer beads), and the Quran with
-                                    Latin transliteration and Indonesian
-                                    translation.</span
-                                >
-                                <a
-                                    href="https://flutter.dev"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Flutter</a
-                                >
-                                <a
-                                    href="https://firebase.google.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Firebase</a
-                                >
-                                <a
-                                    href="https://rive.app"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Rive</a
-                                >
-                                <a
-                                    href="https://www.figma.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Figma</a
-                                >
-                            </div>
-                            <div class="w-72 h-68 relative">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="#6a7282"
-                                    class="size-4 absolute right-6 top-3"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                                    ></path>
-                                </svg>
-                                <Image
-                                    src={muslimpocket}
-                                    alt="Muslim Pocket App Screenshot"
-                                    class="absolute bottom-0 right-0 rounded-sm w-3/4 transition-transform group-hover:scale-105"
-                                />
-                            </div>
-                        </div>
-                        <div
-                            class="bg-gray-50 rounded-md flex justify-center items-center-safe group hover:bg-gray-100 cursor-alias overflow-hidden"
-                        >
-                            <div class="w-72 p-5">
-                                <span
-                                    class="text-lg font-normal font-sans text-gray-800"
-                                    >Service Time</span
-                                >
-                                <span class="block my-2 text-gray-600 text-sm"
-                                    >A smart mobile POS app for motorcycle
-                                    service shops—manage services and spare
-                                    parts with ease, and streamline operations
-                                    with role-based access for Admin, Owner, and
-                                    Cashier. Fast, simple, and built for your
-                                    workshop.</span
-                                >
-                                <a
-                                    href="https://flutter.dev"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Flutter</a
-                                >
-                                <a
-                                    href="https://supabase.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Supabase</a
-                                >
-                                <a
-                                    href="https://www.figma.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Figma</a
-                                >
-                            </div>
-                            <div class="w-72 h-68 relative">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="#6a7282"
-                                    class="size-4 absolute right-6 top-3"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                                    ></path>
-                                </svg>
-                                <Image
-                                    src={servicetime}
-                                    alt="Service Time App Screenshot"
-                                    class="absolute bottom-0 right-0 rounded-sm w-3/4 transition-transform group-hover:scale-105"
-                                />
-                            </div>
-                        </div>
-                        <div
-                            class="bg-gray-50 rounded-md flex justify-center items-center-safe group hover:bg-gray-100 cursor-alias overflow-hidden"
-                        >
-                            <div class="w-72 p-5">
-                                <span
-                                    class="text-lg font-normal font-sans text-gray-800"
-                                    >Pena Report</span
-                                >
-                                <span class="block my-2 text-gray-600 text-sm"
-                                    >A mobile application that simplifies the
-                                    process for students to create their
-                                    entrepreneurship reports and provides easier
-                                    access to information on various aspects of
-                                    entrepreneurship.</span
-                                >
-                                <a
-                                    href="https://flutter.dev"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Flutter</a
-                                >
-                                <a
-                                    href="https://firebase.google.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Firebase</a
-                                >
-                                <a
-                                    href="https://www.figma.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >Figma</a
-                                >
-                            </div>
-                            <div class="w-72 h-68 relative">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="#6a7282"
-                                    class="size-4 absolute right-6 top-3"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                                    ></path>
-                                </svg>
-                                <Image
-                                    src={penareport}
-                                    alt="Pena Report App Screenshot"
-                                    class="absolute bottom-0 right-0 rounded-sm w-3/4 transition-transform group-hover:scale-105"
-                                />
-                            </div>
-                        </div>
-                        <div
-                            class="bg-gray-50 rounded-md flex justify-center items-center-safe group hover:bg-gray-100 cursor-alias"
-                        >
-                            <div class="w-72 p-5">
-                                <span
-                                    class="text-lg font-normal font-sans text-gray-800"
-                                    >POKASI</span
-                                >
-                                <span class="block my-2 text-gray-600 text-sm"
-                                    >App for Muslims on Android, not only
-                                    featuring prayer times (Adhan) but also
-                                    offering other essential features for
-                                    Muslims, such as a prayer tracker, tasbih
-                                    (digital prayer beads), and the Quran with
-                                    Latin transliteration and Indonesian
-                                    translation.</span
-                                >
-                                <a
-                                    href="https://www.codeigniter.com"
-                                    target="_blank"
-                                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-4 cursor-alias"
-                                    >CodeIgniter</a
-                                >
-                            </div>
-                            <div class="w-72 h-68 relative">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="#6a7282"
-                                    class="size-4 absolute right-6 top-3"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                                    ></path>
-                                </svg>
-                                <Image
-                                    src={pokasi}
-                                    alt="POKASI App Screenshot"
-                                    class="absolute bottom-5 right-10 rounded-sm w-3/4 transition-transform group-hover:scale-105"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section class="w-full lg:w-1/2 flex flex-col">
+                <About />
+                <Projects />
             </section>
         </main>
     </body>

@@ -1,0 +1,51 @@
+---
+import data from "../data/content.json";
+const datas = data;
+---
+
+<div class="flex flex-col items-start lg:pl-5">
+    <div class="grid grid-cols-[1fr_auto] items-center gap-3 w-full">
+        <div class="h-px bg-burgundy"></div>
+        <span class="text-4xl font-fraunces font-light text-burgundy"
+            >About</span
+        >
+    </div>
+    <span class="text-gray-600">Tech Stack or Tools</span>
+    <div class="flex flex-wrap gap-2 mt-2">
+        {
+            datas.techStack.map((tech) => (
+                <a
+                    href={tech.link}
+                    target="_blank"
+                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs cursor-alias"
+                >
+                    {tech.name}
+                </a>
+            ))
+        }
+    </div>
+    <span class="text-gray-600 mt-3">Certifications</span>
+    <div class="flex flex-wrap gap-2">
+        {
+            datas.certificates.map((cert) => (
+                <a
+                    href={cert.link}
+                    target="_blank"
+                    class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-2 cursor-alias"
+                >
+                    {cert.title}
+                </a>
+            ))
+        }
+    </div>
+    <span class="text-gray-600 mt-3">Languages</span>
+    <div class="flex gap-2 flex-wrap">
+        {
+            datas.languages.map((lang) => (
+                <span class="text-gray-500 bg-gray-200 px-2 py-1 rounded-sm text-xs mt-2 cursor-alias">
+                    {lang}
+                </span>
+            ))
+        }
+    </div>
+</div>
