@@ -76,7 +76,7 @@
                 }
             ],
             "image": {
-                "src": "../images/muslimpocket.png",
+                "src": "/images/muslimpocket.png",
                 "alt": "Muslim Pocket App Screenshot"
             }
         },
@@ -99,7 +99,7 @@
                 }
             ],
             "image": {
-                "src": "../images/servicetime.png",
+                "src": "/images/servicetime.png",
                 "alt": "Service Time App Screenshot"
             }
         },
@@ -122,7 +122,7 @@
                 }
             ],
             "image": {
-                "src": "../images/penareport.png",
+                "src": "/images/penareport.png",
                 "alt": "Pena Report App Screenshot"
             }
         },
@@ -137,7 +137,7 @@
                 }
             ],
             "image": {
-                "src": "../images/pokasi.png",
+                "src": "/images/pokasi.png",
                 "alt": "POKASI App Screenshot"
             }
         }
