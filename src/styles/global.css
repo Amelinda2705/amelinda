@@ -3,6 +3,9 @@
 @theme {
     --font-inter: var(--font-inter);
     --font-fraunces: var(--font-fraunces);
+
+    --color-white: #fffdfd;
+    --color-burgundy: #B3446C;
 }
 
 body {

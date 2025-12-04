@@ -14,10 +14,23 @@ export default defineConfig({
             {
                 provider: fontProviders.google(),
                 name: "Fraunces",
-              cssVariable: "--font-fraunces",
-                weights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+                cssVariable: "--font-fraunces",
+                weights: [
+                    "100",
+                    "200",
+                    "300",
+                    "400",
+                    "500",
+                    "600",
+                    "700",
+                    "800",
+                    "900",
+                ],
             },
         ],
+    },
+    devToolbar: {
+        enabled: false,
     },
     vite: {
         plugins: [tailwindcss()],
