@@ -3,7 +3,6 @@ import { Image } from "astro:assets";
 
 import data from "../data/content.json";
 const datas = data;
-
 ---
 
 <div class="flex flex-col items-start lg:pl-5 mt-10">
@@ -16,8 +15,8 @@ const datas = data;
     <div class="flex flex-col items-center mt-5 gap-5 w-full">
         {
             datas.projects.map((projects) => (
-                <div class="bg-gray-50 rounded-md flex flex-row justify-center items-center-safe group hover:bg-gray-100 overflow-hidden max-w-full">
-                    <div class="w-1/2 p-5 min-w-0">
+                <div class="bg-gray-50 rounded-md flex flex-col sm:flex-row justify-center items-center-safe group hover:bg-gray-100 overflow-hidden max-w-full">
+                    <div class="w-full sm:w-1/2 p-5 min-w-0">
                         <span class="text-lg font-normal font-sans text-gray-700">
                             {projects.title}
                         </span>
@@ -37,11 +36,11 @@ const datas = data;
                             ))}
                         </div>
                     </div>
-                    <div class="w-1/2 self-stretch flex flex-col items-end justify-end min-w-0">
+                    <div class="w-full sm:w-1/2 self-stretch flex flex-col items-end justify-end min-w-0">
                         <img
                             src={projects.image.src}
                             alt={projects.image.alt}
-                            class="sm:w-3/4 max-w-full transition-transform group-hover:scale-105"
+                            class="w-2/4 sm:w-3/4 max-w-full transition-transform group-hover:scale-105"
                         />
                     </div>
                 </div>
